@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a9a9a92e;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto 15px;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    direction: rtl;
+}
+
+span {
+    font-size: 20px;
+}
+
+.icon i {
+    font-size: 30px;
+    color: rgba(8, 247, 8, 0.664);
+}
+
+.money span {
+    margin: 5px;
+}
+
+.money strong {
+    margin-left: 32px;
+    color: rgba(8, 247, 8, 0.664);
+    font-size: 20px;
+}

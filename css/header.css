@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.r {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    background-color: #072e6a;
+    height: 8vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.togger {
+    display: none;
+}
+
+.togger i {
+    font-size: 27px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    /* width: 500px; */
+}
+
+li {
+    width: 138px;
+    background-color: #d1cfdb;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    color: #072e6a;
+    transition: all 1s;
+    margin: 10px;
+}
+
+li:hover {
+    background: #ffe300;
+}
+
+.logo {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 7px;
+} */
+
+section {
+    background-color: #615a824a;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    padding-right: 24px;
+    color: white;
+}
+
+section .exit {
+    width: 85px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width:767px) {
+    .togger {
+        display: block;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .logo {
+        position: relative;
+        z-index: 1;
+    }
+    .togger .ouvrir {
+        display: block;
+    }
+    .togger .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+    .open .fermer {
+        display: block;
+    }
+    .exit {
+        width: 10px;
+    }
+    .menu li {
+        /* font-size: 2rem; */
+        width: 194px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #115cec;
+        transition: all 1s;
+        color: white;
+        height: 43px;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -100px;
+        font-weight: bold;
+    }
+    li:hover {
+        background-color: #ff8f00;
+        color: white;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: black;
+        /* width: 100%; */
+        height: 115vh;
+        flex-direction: column;
+        padding: 10rem;
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .open .menu {
+        transform: translateX(0);
+    }
+}

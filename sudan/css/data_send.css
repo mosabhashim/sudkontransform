@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bac {
+    position: relative;
+    background-color: #eee;
+    height: 85vh;
+}
+
+.ta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    overflow: auto;
+}
+
+button {
+    width: 100%;
+    color: white;
+}
+
+.ti {
+    position: relative;
+    background-color: #06ff96;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl;
+}
+
+.de {
+    background-color: red;
+}
+
+.tab td,
+.tab th {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab th {
+    background-color: #0672ff;
+    color: white;
+}
+
+.tab tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+@media (max-width:767px) {
+    .ta {
+        margin-top: 122px;
+        height: 100vh;
+    }
+    .tab thead {
+        display: none;
+    }
+    .tab,
+    .tab tbody,
+    .tab tr,
+    .tab td {
+        display: block;
+        width: 100%;
+    }
+    .tab tr {
+        margin-bottom: 15px;
+    }
+    .tab td {
+        text-align: left;
+        padding: 5%;
+        text-align: left;
+        position: relative;
+    }
+    .tab td::before {
+        content: attr(data-label);
+        position: absolute;
+        right: 0;
+        width: 50%;
+        padding-right: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: right;
+    }
+    button {
+        /* text-align: center; */
+        background: #072e6a;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: white;
+    }
+}

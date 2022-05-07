@@ -1,0 +1,30 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .bac {
+            direction: rtl;
+            background-color: aliceblue;
+            padding: 20px;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .box {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            margin-top: 50px;
+            /* width: 100%; */
+            padding-left: 15px;
+            padding-right: 15px;
+            align-items: center;
+            height: 60px;
+        }
+        
+        .box i {
+            margin-left: 10px;
+            font-size: 20px;
+        }

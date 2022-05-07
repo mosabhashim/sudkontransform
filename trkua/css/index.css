@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a9a9a92e;
+}
+
+.back {
+    /* background: #a9a9a92e; */
+    /* height: 100vh; */
+    display: flex;
+    direction: rtl;
+    margin-bottom: 40px;
+}
+
+.container {
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: auto 15px;
+}
+
+.con {
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px;
+    text-align: center;
+    display: none;
+    /* background-color: red; */
+}
+
+i {
+    color: white;
+}
+
+.col div i {
+    font-size: 40px;
+}
+
+.col div {
+    position: relative;
+    background: #072e6a;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 258px;
+    color: white;
+    height: 200px;
+}
+
+.col .o1::after {
+    content: "الرصيد";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o2::after {
+    content: "تحويلات";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o3::after {
+    content: "بحث";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o4::after {
+    content: " الواردة";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o5::after {
+    content: " الصادرة";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o6::after {
+    content: " الملغية";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o7::after {
+    content: "الشحن";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o8::after {
+    content: "الضبط";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o9::after {
+    content: "كشف حساب";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o10::after {
+    content: "م . السابقة";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o11::after {
+    content: "مهام";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+.col .o12::after {
+    content: "عن النظام";
+    position: absolute;
+    width: 100px;
+    color: #072e6a;
+    /* background-color: red; */
+    bottom: -15%;
+}
+
+@media(max-width:767px) {
+    .back {
+        height: 100%;
+    }
+    .col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 10px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+        /* position: relative;
+        top: -97px; */
+        /* background-color: red; */
+    }
+    .col div i {
+        font-size: 30px;
+    }
+    .col div {
+        width: 60px;
+        height: 60px;
+    }
+    .col .o1::after {
+        bottom: -40%;
+    }
+    .col .o2::after {
+        bottom: -40%;
+    }
+    .col .o3::after {
+        bottom: -40%;
+    }
+    .col .o4::after {
+        bottom: -40%;
+    }
+    .col .o5::after {
+        bottom: -40%;
+    }
+    .col .o6::after {
+        bottom: -40%;
+    }
+    .col .o7::after {
+        bottom: -40%;
+    }
+    .col .o8::after {
+        bottom: -40%;
+    }
+    .col .o9::after {
+        bottom: -40%;
+    }
+    .col .o10::after {
+        bottom: -40%;
+    }
+    .col .o11::after {
+        bottom: -40%;
+    }
+    .col .o12::after {
+        bottom: -40%;
+    }
+}
