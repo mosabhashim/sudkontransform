@@ -67,7 +67,7 @@ button{
     </div>
             <table class="tab">
                 <?php
-                session_start();
+             
                     $id = $_SESSION['id_re'];
                     if(isset($_SESSION['id_re'])){
 

@@ -20,6 +20,11 @@ include('./includes/login_chick.php');
         /* .counter{
                 color: red;
             } */
+
+            span{
+                transform:scale(x);
+                transition: all 3s;
+            }
     </style>
 </head>
 
@@ -35,7 +40,7 @@ include('./includes/login_chick.php');
                 $query = "SELECT SUM(deliv_money) AS deliv_money FROM transform WHERE currency='جنية' ";
                 $query_run = mysqli_query($con, $query);
                 $row = mysqli_fetch_assoc($query_run);
-                $TOTALMONEY = $row['deliv_money'];
+                $TOTALMONEY =  $row['deliv_money'];
 
                 ?>
                 <span style="font-weight: bolder; " class="counter" data-target="<?php echo ($TOTALMONEY); ?>">

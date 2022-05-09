@@ -85,11 +85,8 @@ include('./includes/login_chick.php');
                     <th>اسم المستلم</th>
                     <th> رقم الهاتف</th>
                     <th> المبلغ</th>
-                    <th>العملة</th>
                     <th>الحالة</th>
                     <th>الملاحظات</th>
-
-
                 </thead>
                 <tbody>
                     <tr>

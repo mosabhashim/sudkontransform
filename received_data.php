@@ -39,13 +39,14 @@ include('./includes/login_chick.php');
             <table class="tab">
                 <thead>
                     <th>رقم الحوالة </th>
+                    <th>التاريخ </th>
                     <th>اسم المرسل </th>
                     <th>اسم المستلم</th>
                     <th> المبلغ</th>
                     <th>العملة</th>
                     <th>الحالة</th>
                     <th>الملاحظات</th>
-                    <th> الغاء</th>
+                    
                 </thead>
                 <tbody>
                     <?php
@@ -56,7 +57,7 @@ include('./includes/login_chick.php');
                             <td style="direction: ltr;" data-label=" التاريخ"><?php echo $row['date']   ?></td>
                             <td data-label=" اسم المرسل"> <?php echo $row['name_send'] ?> </td>
                             <td data-label=" اسم المستلم"> <?php echo $row['name_res'] ?></td>
-                            <td data-label=" المبلغ"><?php echo $row['money'] ?></td>
+                            <td data-label=" المبلغ"><?php echo number_format($row['money'])  ?></td>
                             <td data-label="العملة"><?php echo $row['currency'] ?></td>
                             <td style="background-color: greenyellow;" data-label=" الحالة"> <?php echo $row['status'] ?></td>
                             <td data-label="ملاحظات"><?php echo $row['note'] ?></td>

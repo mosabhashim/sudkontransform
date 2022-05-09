@@ -60,8 +60,16 @@ include ('./includes/login_chick.php');
                 <input type="text" disabled name="uptel" value="<?php echo $row['tel']?>">
                 <label for="">ملاحظات</label>
                 <input type="text" disabled name="upnote" value="<?php echo $row['note']?>">
-               
+                <!-- <?php
+                // if($row['deliv_money'] == 0){
+                //     $row['status']='في الانتظار';
+                // }
+                // else{
+                //     $row['status']='استلم'; 
+                // }
+                ?> -->
                 <label for="">الحالة</label>
+                
                 <select name="status" id="">
                     <option >في الانتظار </option>
                     <option >استلم</option>
